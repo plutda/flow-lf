@@ -13,15 +13,15 @@ export default defineComponent({
   props: {
     lf: Object
   },
-  setup(props: any) {
-    const dragNode = (item: any) => {
+  setup(props) {
+    const dragNode = (item) => {
       props.lf.dnd.startDrag({
         type: item.type,
         text: item.label,
       });
     };
     const getNodePanel = () => {
-      const nodeList: any = [];
+      const nodeList = [];
       approveNodes.forEach((item) => {
         nodeList.push({
           type: item.type,
@@ -61,7 +61,6 @@ export default defineComponent({
 }
 
 .approve-node .node-label {
-  user-select: none;
   font-size: 14px;
   color: #000000;
   margin-top: 8px;
@@ -76,8 +75,8 @@ export default defineComponent({
   width: 10px;
   height: 10px;
   background: red;
-  top: 7.5px;
-  left: 7.5px;
+  top: 10px;
+  left: 10px;
   cursor: pointer;
 }
 </style>

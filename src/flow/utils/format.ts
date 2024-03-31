@@ -1,5 +1,5 @@
-import LogicFlow from '@logicflow/core';
 import { GraphModel } from '@logicflow/core/types'
+import LogicFlow from '@logicflow/core';
 import { nanoid } from 'nanoid'
 
 interface Node {
@@ -48,8 +48,8 @@ export default function (lf: LogicFlow) {
         }
       }
       node.rawId = m.id //原id
-      node.id = 'nid-' + nanoid(6) //新id
-      node.name = m.text.value
+      // node.id = 'nid-' + nanoid(6) //新id
+      node.name = m.text && m.text.value
       
       return node
     })
@@ -63,7 +63,8 @@ export default function (lf: LogicFlow) {
         source_node_id: sourceNode.id,
         target_node_id: targetNode.id,
         sourceNodeId: sourceNode.id,
-        targetNodeId: targetNode.id
+        targetNodeId: targetNode.id,
+        val: k.text && k.text.value === '是' ? 'true' : 'false'
       }
     })
     return {

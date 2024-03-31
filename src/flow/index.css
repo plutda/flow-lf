@@ -3,6 +3,7 @@
   height: 100%;
 }
 .node-panel {
+  user-select: none;
   position: absolute;
   top: 10px;
   left: 10px;
