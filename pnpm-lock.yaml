@@ -31,9 +31,6 @@ devDependencies:
   '@vitejs/plugin-vue-jsx':
     specifier: ^3.1.0
     version: 3.1.0(vite@5.2.7)(vue@3.4.21)
-  push-dir:
-    specifier: ^0.4.1
-    version: 0.4.1
   typescript:
     specifier: ^5.2.2
     version: 5.4.3
@@ -2858,10 +2855,6 @@ packages:
       brace-expansion: 2.0.1
     dev: true
 
-  /minimist@1.2.8:
-    resolution: {integrity: sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==}
-    dev: true
-
   /mousetrap@1.6.5:
     resolution: {integrity: sha512-QNo4kEepaIBwiT8CDhP98umTetp+JNfQYBWvC1pc6/OAibuXtRcxZ58Qz8skvEHYvURne/7R8T5VoOI7rDsEUA==}
     dev: false
@@ -3041,14 +3034,6 @@ packages:
     resolution: {integrity: sha512-vYt7UD1U9Wg6138shLtLOvdAu+8DsC/ilFtEVHcH+wydcSpNE20AfSOduf6MkRFahL5FY7X1oU7nKVZFtfq8Fg==}
     engines: {node: '>=6'}
     dev: false
-
-  /push-dir@0.4.1:
-    resolution: {integrity: sha512-Nrrsly0c3kCfu725Jnif/s5adHpBwKCGWBttHVxTndF4iyGBSFtNi/pduFxHF5ks0kWtHcbA3XXP5MEra6iiCA==}
-    engines: {node: '>=0.12'}
-    hasBin: true
-    dependencies:
-      minimist: 1.2.8
-    dev: true
 
   /querystringify@2.2.0:
     resolution: {integrity: sha512-FIqgj2EUvTa7R50u0rGsyTftzjYmv/a3hO345bZNrqabNqjtgiDMgmo4mkUjd+nzU5oF3dClKqFIPUKybUyqoQ==}
