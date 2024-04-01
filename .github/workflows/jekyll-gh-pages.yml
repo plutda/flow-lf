@@ -24,5 +24,10 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Move built files to docs directory
-        run: mv dist docs
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          personal_token: ${{ secrets.github_job }}
+          PUBLISH_BRANCH: main
+          PUBLISH_DIR: ./docs
+          commit_message: ${{ github.event.head_commit.message }}
