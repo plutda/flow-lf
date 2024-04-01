@@ -25,4 +25,4 @@ jobs:
         run: npm run build
 
       - name: Move built files to docs directory
-        run: mv build docs
+        run: mv dist docs
