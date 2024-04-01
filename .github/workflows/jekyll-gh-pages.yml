@@ -23,7 +23,4 @@ jobs:
         
       - name: Build
         run: npm run build
-        
-      - name: Deploy
-        run: |
-          cp -R build docs
+      
